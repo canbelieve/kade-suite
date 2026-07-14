@@ -2,7 +2,11 @@
 
 **KAde Suite** è un’estensione Chrome per scaricare, organizzare e archiviare localmente **F24** e **Certificazioni Uniche** dal Cassetto Fiscale dell’Agenzia delle Entrate.
 
-È pensata per CAF, studi commerciali, consulenti del lavoro, professionisti fiscali, intermediari abilitati e uffici amministrativi che gestiscono frequentemente documenti fiscali per più soggetti.
+## Installa l’estensione
+
+[**Installa KAde Suite dal Chrome Web Store**](https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia)
+
+L’installazione avviene direttamente da Chrome e gli aggiornamenti successivi vengono gestiti automaticamente dal browser.
 
 ## Funzioni principali
 
