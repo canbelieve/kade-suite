@@ -4,262 +4,143 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Download massivo F24 e CU dal Cassetto Fiscale | KAde Suite</title>
-  <meta name="description" content="KAde Suite è l’estensione Chrome per scaricare in modo massivo F24 disponibili in PDF e Certificazioni Uniche dal Cassetto Fiscale, unirli, rinominarli e salvarli localmente.">
+  <meta name="description" content="KAde Suite è l’estensione Chrome per scaricare in modo massivo F24 in PDF e Certificazioni Uniche dal Cassetto Fiscale, unirli, rinominarli e archiviarli localmente.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://canbelieve.github.io/kade-suite/">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="it_IT">
-  <meta property="og:site_name" content="KAde Suite">
-  <meta property="og:title" content="Download massivo F24 e CU dal Cassetto Fiscale | KAde Suite">
-  <meta property="og:description" content="Estensione Chrome per scaricare in blocco F24 disponibili in PDF e Certificazioni Uniche dal Cassetto Fiscale.">
+  <meta property="og:title" content="KAde Suite – Download massivo F24 e Certificazioni Uniche">
+  <meta property="og:description" content="Scarica, unisci, rinomina e archivia localmente F24 in PDF e Certificazioni Uniche dal Cassetto Fiscale.">
   <meta property="og:url" content="https://canbelieve.github.io/kade-suite/">
   <meta property="og:image" content="https://canbelieve.github.io/kade-suite/assets/og-kade-suite.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Download massivo F24 e CU dal Cassetto Fiscale | KAde Suite">
-  <meta name="twitter:description" content="Estensione Chrome per scaricare in blocco F24 disponibili in PDF e Certificazioni Uniche dal Cassetto Fiscale.">
-  <meta name="twitter:image" content="https://canbelieve.github.io/kade-suite/assets/og-kade-suite.png">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="theme-color" content="#09111f">
-  <meta name="color-scheme" content="dark">
-  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <meta name="theme-color" content="#07111f">
+  <link rel="icon" href="assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "KAde Suite",
     "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Google Chrome",
-    "description": "Estensione Chrome per scaricare in blocco F24 in PDF e Certificazioni Uniche dal Cassetto Fiscale, unirli, rinominarli e salvarli localmente.",
+    "operatingSystem": "Chrome",
+    "description": "Estensione Chrome per il download massivo di F24 in PDF e Certificazioni Uniche dal Cassetto Fiscale.",
     "url": "https://canbelieve.github.io/kade-suite/",
     "installUrl": "https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia",
-    "sameAs": ["https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia"],
-    "image": "https://canbelieve.github.io/kade-suite/assets/og-kade-suite.png",
-    "isAccessibleForFree": true,
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR"
-    },
-    "featureList": [
-      "Download massivo F24 disponibili in PDF",
-      "Download massivo Certificazioni Uniche",
-      "Unione automatica degli F24 composti da più PDF",
-      "Rinomina automatica dei documenti",
-      "Riconoscimento dei file già scaricati",
-      "Salvataggio locale nella cartella Download"
-    ]
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}
   }
   </script>
-  <style>
-    :root{
-      --bg:#09111f;--bg2:#0d1729;--panel:#0f1b31;--panel2:#12203a;--soft:#152741;--line:#243657;
-      --text:#dbe7f7;--muted:#96a8c6;--title:#f7fbff;--brand:#19c2ae;--brand2:#0f766e;--brandSoft:rgba(25,194,174,.12);
-      --warn:#f59e0b;--warnSoft:rgba(245,158,11,.12);--shadow:0 20px 60px rgba(0,0,0,.32);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);line-height:1.65;background:
-      radial-gradient(circle at 0 0, rgba(25,194,174,.16), transparent 36rem),
-      radial-gradient(circle at 100% 0, rgba(14,116,144,.16), transparent 28rem),
-      linear-gradient(180deg,#08101d 0%,#0a1323 100%)}
-    a{color:#80f5e5;text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{width:min(1140px,calc(100% - 32px));margin:0 auto;padding:26px 0 56px}
-    .hero{position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(18,32,58,.96),rgba(11,21,38,.98));border:1px solid rgba(255,255,255,.06);border-radius:30px;box-shadow:var(--shadow);padding:34px}
-    .hero:before{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle, rgba(25,194,174,.24), rgba(25,194,174,0));pointer-events:none}
-    .topnav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:26px;position:relative;z-index:1}
-    .brand{display:flex;align-items:center;gap:16px}.logo{width:62px;height:62px;border-radius:18px;background:linear-gradient(135deg,var(--brand2),#19c2ae);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:20px;letter-spacing:-.04em;box-shadow:0 18px 36px rgba(15,118,110,.28)}
-    .brand-title{font-size:clamp(30px,5vw,52px);line-height:1;margin:0;color:var(--title);letter-spacing:-.06em;font-weight:900}.subtitle{font-size:16px;color:#b6c6e0;margin-top:6px}.seo-title{max-width:940px;margin:8px 0 18px;color:var(--title);font-size:clamp(31px,5vw,54px);line-height:1.08;letter-spacing:-.045em}
-    .navlinks{display:flex;gap:10px;flex-wrap:wrap}.navlinks a{display:inline-flex;align-items:center;min-height:40px;padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);color:#dbe7f7;font-weight:700;text-decoration:none}
-    .lead{max-width:900px;font-size:19px;color:#e8f0fb;margin:0;position:relative;z-index:1}.lead strong{color:#fff}
-    .badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;position:relative;z-index:1}.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);font-size:14px;font-weight:700;color:#d9f8f2}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;position:relative;z-index:1}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 16px;border-radius:14px;border:1px solid var(--brand);background:linear-gradient(180deg,#17bca9,#0f766e);color:white;font-weight:850;text-decoration:none;box-shadow:0 12px 26px rgba(15,118,110,.25)}.btn.secondary{background:rgba(255,255,255,.03);border-color:rgba(255,255,255,.1);box-shadow:none;color:#dce8f7}
-    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:18px}.panel{background:linear-gradient(180deg,rgba(17,28,49,.98),rgba(13,24,42,.98));border:1px solid rgba(255,255,255,.06);border-radius:24px;padding:24px;box-shadow:0 12px 30px rgba(0,0,0,.18)}
-    h2,h3{color:var(--title);line-height:1.15} h2{font-size:28px;margin:0 0 12px;letter-spacing:-.03em} h3{font-size:18px;margin:0 0 8px}
-    .section{margin-top:18px}.eyebrow{display:inline-block;margin-bottom:10px;color:#8cf1e2;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-    .muted{color:var(--muted)}
-    .feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}.card{background:linear-gradient(180deg,var(--panel2),var(--soft));border:1px solid var(--line);border-radius:18px;padding:18px}.card p{margin:0;color:#b8c6db}.card strong{display:block;color:#fff;font-size:17px;margin-bottom:6px}
-    .callout{background:linear-gradient(180deg,rgba(245,158,11,.1),rgba(245,158,11,.05));border:1px solid rgba(245,158,11,.28)}
-    .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}.step{background:linear-gradient(180deg,var(--panel2),var(--soft));border:1px solid var(--line);border-radius:18px;padding:18px}.stepnum{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--brandSoft);color:#a8fff1;font-weight:900;margin-bottom:10px}
-    .paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px} code{display:block;padding:13px 14px;border-radius:14px;background:#08111f;border:1px solid #233455;color:#9cf4e7;font-size:14px;overflow-wrap:anywhere}
-    .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px;margin-top:14px}.item{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.08)}
-    .store-panel{background:linear-gradient(135deg,rgba(25,194,174,.16),rgba(15,118,110,.06));border:1px solid rgba(25,194,174,.32)}.store-panel h2{font-size:32px}.store-note{color:#b8c6db;margin:8px 0 0}.store-btn{min-height:52px;padding:14px 20px;font-size:16px}.store-badge-link{display:inline-flex;align-items:center;justify-content:center;min-height:58px;text-decoration:none}.store-badge-link:hover{text-decoration:none}.store-badge-link img{display:block;width:206px;height:58px;max-width:100%;object-fit:contain}.faq{display:grid;gap:10px;margin-top:14px}.faq details{background:linear-gradient(180deg,var(--panel2),var(--soft));border:1px solid var(--line);border-radius:16px;padding:0 16px}.faq summary{cursor:pointer;color:#fff;font-weight:800;padding:15px 0}.faq details p{margin:0 0 16px;color:#b8c6db}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px;padding:14px 8px}
-    @media (max-width:960px){.grid{grid-template-columns:1fr}.steps,.feature-grid,.paths,.list{grid-template-columns:1fr}.hero,.panel{padding:22px}.brand{align-items:flex-start}.logo{width:56px;height:56px}.brand-title{font-size:40px}}
-  </style>
 </head>
 <body>
-  <main class="wrap">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/icon-128.png" alt="Logo KAde Suite"><span>KAde Suite</span></a>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="#funzioni">Funzioni</a>
+        <a href="#come-funziona">Come funziona</a>
+        <a href="#faq">FAQ</a>
+        <a class="store-nav" href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
     <section class="hero">
-      <div class="topnav">
-        <div class="brand">
-          <div class="logo">KAde</div>
-          <div>
-            <div class="brand-title">KAde Suite</div>
-            <div class="subtitle">Download massivo F24 e Certificazioni Uniche dal Cassetto Fiscale</div>
+      <div class="container">
+        <div class="eyebrow">Disponibile sul Chrome Web Store</div>
+        <h1>Download massivo di <span>F24 e Certificazioni Uniche</span></h1>
+        <p class="hero-copy">KAde Suite riduce le operazioni ripetitive nel Cassetto Fiscale: individua i documenti disponibili, scarica i PDF, unisce gli F24 multipli e organizza tutto nelle cartelle locali.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia" target="_blank" rel="noopener noreferrer">Installa gratuitamente</a>
+          <a class="button" href="#come-funziona">Scopri come funziona</a>
+        </div>
+        <a href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia" target="_blank" rel="noopener noreferrer" aria-label="Disponibile nel Chrome Web Store">
+          <img class="store-badge" src="assets/chrome-web-store-badge.png" alt="Disponibile nel Chrome Web Store">
+        </a>
+        <div class="hero-notes"><span>✓ Installazione immediata</span><span>✓ Aggiornamenti automatici</span><span>✓ Nessun software aggiuntivo</span></div>
+
+        <div class="screenshot-shell" aria-label="Anteprima di KAde Suite">
+          <div class="window-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <img src="assets/kade-suite-dashboard.png" alt="Dashboard di KAde Suite per il download massivo degli F24">
+        </div>
+      </div>
+    </section>
+
+    <section id="funzioni">
+      <div class="container">
+        <div class="section-heading"><h2>Le operazioni essenziali, in un solo strumento</h2><p>Una dashboard compatta per scaricare e archiviare i documenti senza passaggi inutili.</p></div>
+        <div class="grid-3">
+          <article class="card"><div class="card-icon">F24</div><h3>Download massivo F24</h3><p>Scarica gli F24 che il Cassetto Fiscale rende disponibili in formato PDF.</p></article>
+          <article class="card"><div class="card-icon">CU</div><h3>Certificazioni Uniche</h3><p>Recupera in sequenza le Certificazioni Uniche dalla relativa pagina del Cassetto Fiscale.</p></article>
+          <article class="card"><div class="card-icon">⧉</div><h3>Unione automatica</h3><p>Riunisce in un solo PDF gli F24 composti da più fogli o quietanze.</p></article>
+          <article class="card"><div class="card-icon">Aa</div><h3>Rinomina ordinata</h3><p>Attribuisce ai file nomi leggibili e utili per la successiva archiviazione.</p></article>
+          <article class="card"><div class="card-icon">↻</div><h3>Controllo dei duplicati</h3><p>Riconosce i documenti già presenti e riduce i download ripetuti.</p></article>
+          <article class="card"><div class="card-icon">⌂</div><h3>Elaborazione locale</h3><p>I documenti vengono elaborati nel browser e salvati sul computer dell’utente.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="come-funziona">
+      <div class="container">
+        <div class="section-heading"><h2>Come funziona</h2><p>Tre passaggi, senza configurazioni complesse.</p></div>
+        <div class="steps">
+          <article class="card step"><h3>Accedi</h3><p>Entra nel Cassetto Fiscale e seleziona l’utenza di lavoro o il soggetto corretto.</p></article>
+          <article class="card step"><h3>Apri la pagina corretta</h3><p>Vai in F24 / Versamenti per gli F24 oppure nella pagina Certificazioni Uniche per le CU.</p></article>
+          <article class="card step"><h3>Avvia KAde Suite</h3><p>Esegui la scansione e scarica i documenti disponibili dalla dashboard dell’estensione.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container requirements">
+        <article class="card">
+          <div class="section-heading"><h2>Requisiti</h2><p>KAde Suite opera sulla sessione già aperta nel browser.</p></div>
+          <div class="check-list">
+            <div class="check"><span>✓</span><div><strong>Google Chrome</strong><br>Estensione installata dal Chrome Web Store.</div></div>
+            <div class="check"><span>✓</span><div><strong>Accesso già effettuato</strong><br>L’estensione non gestisce credenziali, SPID, CIE o altri strumenti di autenticazione.</div></div>
+            <div class="check"><span>✓</span><div><strong>Utenza corretta selezionata</strong><br>KAde Suite lavora sulla posizione visualizzata dall’utente.</div></div>
           </div>
+        </article>
+        <article class="card notice">
+          <div class="section-heading"><h2>Nota sugli F24</h2><p>Il download è possibile soltanto quando il sito espone il documento in formato PDF.</p></div>
+          <p>Questa disponibilità è normalmente presente per utenze Entratel o intermediari abilitati, ma non è garantita per l’utente finale. KAde Suite non può generare un PDF che il sito dell’Agenzia delle Entrate non rende disponibile.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-heading"><h2>Domande frequenti</h2><p>Le informazioni principali, senza ripetizioni.</p></div>
+        <div class="faq">
+          <details><summary>Devo essere già autenticato?</summary><p>Sì. KAde Suite non effettua il login e non legge o conserva le credenziali. Devi accedere al sito e selezionare l’utenza di lavoro prima di avviare l’estensione.</p></details>
+          <details><summary>Da quale pagina devo avviare il download?</summary><p>Per gli F24 devi aprire la pagina F24 / Versamenti. Per le Certificazioni Uniche devi aprire la relativa pagina CU.</p></details>
+          <details><summary>Dove vengono salvati i file?</summary><p>Nelle cartelle <strong>Download/KAdeSuite/F24</strong> e <strong>Download/KAdeSuite/CU</strong>.</p></details>
+          <details><summary>I documenti vengono inviati a server esterni?</summary><p>No. L’elaborazione avviene localmente nel browser e i file vengono salvati sul dispositivo dell’utente.</p></details>
+          <details><summary>KAde Suite è un prodotto dell’Agenzia delle Entrate?</summary><p>No. È uno strumento indipendente e non è affiliato, sponsorizzato, approvato o gestito dall’Agenzia delle Entrate.</p></details>
         </div>
-        <div class="navlinks">
-          <a href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia" target="_blank" rel="noopener">Chrome Web Store</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="license.html">Licenza</a>
-          <a href="https://paypal.me/BDISABATINO" rel="noopener">Dona con PayPal</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta">
+          <h2>Riduci il lavoro manuale</h2>
+          <p>Installa KAde Suite dal Chrome Web Store e organizza F24 e Certificazioni Uniche direttamente dal browser.</p>
+          <a class="button primary" href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia" target="_blank" rel="noopener noreferrer">Apri il Chrome Web Store</a>
+          <a href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia" target="_blank" rel="noopener noreferrer"><img class="store-badge" src="assets/chrome-web-store-badge.png" alt="Disponibile nel Chrome Web Store"></a>
         </div>
       </div>
-      <h1 class="seo-title">Download massivo F24 e Certificazioni Uniche dal Cassetto Fiscale</h1>
-      <p class="lead"><strong>KAde Suite</strong> è un’estensione Chrome pensata per velocizzare il lavoro di chi consulta frequentemente il Cassetto Fiscale dell’Agenzia delle Entrate. Consente di scaricare F24 in PDF e Certificazioni Uniche in blocco, organizzarli e archiviarli localmente, riducendo le operazioni manuali ripetitive.</p>
-      <div class="badge-row">
-        <span class="badge">✓ Disponibile sul Chrome Web Store</span>
-        <span class="badge">✅ F24 in PDF</span>
-        <span class="badge">✅ Certificazioni Uniche</span>
-        <span class="badge">✅ Salvataggio locale</span>
-        <span class="badge">✅ Nessun cloud</span>
-        <span class="badge">✅ Strumento indipendente</span>
-      </div>
-      <div class="actions">
-        <a class="store-badge-link" href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia" target="_blank" rel="noopener noreferrer" aria-label="Installa KAde Suite dal Chrome Web Store">
-          <img src="assets/chrome-web-store-badge.png" width="206" height="58" alt="Disponibile nel Chrome Web Store">
-        </a>
-        <a class="btn secondary" href="privacy.html">Privacy Policy</a>
-        <a class="btn secondary" href="license.html">Licenza</a>
-      </div>
     </section>
-
-    <section class="panel section store-panel">
-      <span class="eyebrow">Estensione pubblicata</span>
-      <h2>Installa KAde Suite dal Chrome Web Store</h2>
-      <p>KAde Suite è disponibile sul Chrome Web Store. L’installazione richiede pochi secondi e gli aggiornamenti successivi vengono gestiti automaticamente da Chrome.</p>
-      <p class="store-note">Non è necessario installare programmi esterni sul computer.</p>
-      <div class="actions">
-        <a class="store-badge-link" href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia" target="_blank" rel="noopener noreferrer" aria-label="Apri KAde Suite nel Chrome Web Store">
-          <img src="assets/chrome-web-store-badge.png" width="206" height="58" alt="Disponibile nel Chrome Web Store">
-        </a>
-      </div>
-    </section>
-
-    <div class="grid section">
-      <section class="panel callout">
-        <span class="eyebrow">Prima di iniziare</span>
-        <h2>Accesso e pagina corretta</h2>
-        <p>Per usare KAde Suite è necessario accedere al sito dell’Agenzia delle Entrate con le proprie credenziali o con un’utenza abilitata.</p>
-        <p>L’utente deve essere già loggato e deve aver selezionato l’utenza di lavoro o il soggetto per cui intende visualizzare e scaricare i documenti.</p>
-        <p>KAde Suite lavora sulla pagina del Cassetto Fiscale già aperta nel browser. Per scaricare gli F24, è necessario trovarsi nella pagina dedicata agli <strong>F24 / Versamenti</strong>. Per scaricare le Certificazioni Uniche, è necessario trovarsi nella pagina dedicata alle <strong>Certificazioni Uniche</strong>.</p>
-        <p><strong>L’estensione non effettua l’accesso al sito dell’Agenzia delle Entrate al posto dell’utente e non cambia autonomamente soggetto o utenza di lavoro.</strong></p>
-      </section>
-
-      <section class="panel">
-        <span class="eyebrow">Destinatari</span>
-        <h2>Per chi è utile</h2>
-        <p>KAde Suite è rivolta a CAF, studi commerciali, consulenti del lavoro, professionisti fiscali, intermediari abilitati e uffici amministrativi che gestiscono abitualmente documenti fiscali riferiti a più soggetti.</p>
-        <p>È adatta anche a chi desidera archiviare in modo ordinato i propri F24 e le proprie Certificazioni Uniche.</p>
-        <div class="list">
-          <div class="item">CAF e studi commerciali</div>
-          <div class="item">Consulenti del lavoro</div>
-          <div class="item">Professionisti fiscali</div>
-          <div class="item">Intermediari abilitati</div>
-          <div class="item">Uffici amministrativi</div>
-          <div class="item">Gestione di più posizioni fiscali</div>
-        </div>
-      </section>
-    </div>
-
-    <section class="panel section">
-      <span class="eyebrow">Funzioni</span>
-      <h2>Download massivo di F24 e Certificazioni Uniche</h2>
-      <div class="feature-grid">
-        <div class="card"><strong>Download F24</strong><p>Scarica in blocco i modelli F24 presenti nella sezione Versamenti del Cassetto Fiscale, quando tali documenti sono disponibili in formato PDF.</p></div>
-        <div class="card"><strong>Download CU</strong><p>Scarica le Certificazioni Uniche disponibili nel Cassetto Fiscale, evitando il recupero manuale documento per documento.</p></div>
-        <div class="card"><strong>Unione PDF</strong><p>Combina automaticamente gli F24 composti da più PDF, più fogli o più quietanze in un unico file finale.</p></div>
-        <div class="card"><strong>Rinomina automatica</strong><p>Rinomina i documenti con criteri pensati per facilitare catalogazione, ricerca e archiviazione.</p></div>
-        <div class="card"><strong>File già scaricati</strong><p>Controlla i documenti già presenti nella cartella di destinazione, evitando duplicazioni inutili.</p></div>
-        <div class="card"><strong>Log operativo</strong><p>Consente di seguire l’avanzamento della scansione, del download, dell’unione dei PDF e del salvataggio dei file.</p></div>
-      </div>
-    </section>
-
-    <section class="panel section callout">
-      <span class="eyebrow">F24</span>
-      <h2>Nota sugli F24 disponibili in PDF</h2>
-      <p>KAde Suite può scaricare soltanto gli F24 che il Cassetto Fiscale rende effettivamente disponibili in formato PDF.</p>
-      <p>In genere questa possibilità è disponibile per le utenze Entratel o per gli intermediari abilitati. Per l’utente finale, invece, il Cassetto Fiscale può mostrare i dati del versamento senza offrire il relativo PDF.</p>
-      <p><strong>Se il sito dell’Agenzia delle Entrate non rende disponibile il PDF, KAde Suite non può crearlo autonomamente.</strong></p>
-    </section>
-
-    <section class="panel section">
-      <span class="eyebrow">Procedura</span>
-      <h2>Come funziona</h2>
-      <div class="steps">
-        <div class="step"><div class="stepnum">1</div><h3>Accedi al Cassetto Fiscale</h3><p>Accedi al sito dell’Agenzia delle Entrate e seleziona l’utenza di lavoro o il soggetto corretto.</p></div>
-        <div class="step"><div class="stepnum">2</div><h3>Apri la pagina corretta</h3><p>Vai nella pagina F24 / Versamenti per gli F24, oppure nella pagina Certificazioni Uniche per le CU.</p></div>
-        <div class="step"><div class="stepnum">3</div><h3>Avvia KAde Suite</h3><p>Apri l’estensione da Chrome, esegui la scansione e scarica i documenti disponibili.</p></div>
-      </div>
-    </section>
-
-    <section class="panel section">
-      <span class="eyebrow">Archiviazione</span>
-      <h2>Salvataggio locale ordinato</h2>
-      <p>Nella versione distribuita come sola estensione Chrome, i documenti vengono salvati nella cartella Download del browser, all’interno di sottocartelle dedicate.</p>
-      <div class="paths">
-        <code>Download/KAdeSuite/F24</code>
-        <code>Download/KAdeSuite/CU</code>
-      </div>
-      <p class="muted">Questa modalità rispetta le regole di sicurezza di Chrome: una normale estensione non può salvare liberamente file in qualsiasi cartella del computer senza autorizzazioni aggiuntive.</p>
-    </section>
-
-    <div class="grid section">
-      <section class="panel">
-        <span class="eyebrow">Privacy e dati</span>
-        <h2>Elaborazione locale</h2>
-        <p>KAde Suite lavora sulle pagine del Cassetto Fiscale aperte dall’utente nel browser.</p>
-        <p>L’estensione non è un servizio cloud, non richiede registrazione e non invia documenti fiscali a server esterni dello sviluppatore. I PDF vengono elaborati localmente nel browser e salvati sul dispositivo dell’utente.</p>
-        <p>KAde Suite non legge, non salva e non trasmette password, cookie di autenticazione o credenziali di accesso.</p>
-        <p><a href="privacy.html">Leggi la Privacy Policy completa →</a></p>
-      </section>
-      <section class="panel">
-        <span class="eyebrow">Sostegno al progetto</span>
-        <h2>Uso e licenza</h2>
-        <p>KAde Suite è distribuita in modalità donationware.</p>
-        <p>L’uso personale o interno, purché non massivo né continuativo, è gratuito. Una donazione è facoltativa e contribuisce a sostenere lo sviluppo, la manutenzione e il miglioramento dell’estensione.</p>
-        <p>Per utilizzo professionale, continuativo, massivo o commerciale da parte di CAF, studi, aziende, organizzazioni o soggetti che usano lo strumento per clienti o terzi, è necessario contattare lo sviluppatore per informazioni su licenza e condizioni d’uso.</p>
-        <p>Contatto: <a href="mailto:info@latenzazero.it">info@latenzazero.it</a></p>
-        <div class="actions"><a class="btn" href="https://paypal.me/BDISABATINO" rel="noopener">Dona con PayPal</a><a class="btn secondary" href="license.html">Licenza e condizioni</a></div>
-      </section>
-    </div>
-
-
-    <section class="panel section">
-      <span class="eyebrow">Domande frequenti</span>
-      <h2>Download massivo dal Cassetto Fiscale</h2>
-      <div class="faq">
-        <details>
-          <summary>Come si scaricano gli F24 in modo massivo dal Cassetto Fiscale?</summary>
-          <p>Dopo aver effettuato l’accesso e selezionato l’utenza di lavoro corretta, occorre aprire la pagina F24 / Versamenti. KAde Suite esegue la scansione della pagina e scarica in blocco gli F24 che il sito rende disponibili in formato PDF.</p>
-        </details>
-        <details>
-          <summary>KAde Suite consente il download massivo delle CU?</summary>
-          <p>Sì. Aprendo la pagina delle Certificazioni Uniche, l’estensione può individuare e scaricare in blocco le CU disponibili, rinominandole e salvandole nella cartella dedicata.</p>
-        </details>
-        <details>
-          <summary>Il download massivo degli F24 funziona anche per l’utente finale?</summary>
-          <p>Funziona quando il Cassetto Fiscale rende disponibile il documento F24 in formato PDF. Questa condizione è comune per le utenze Entratel e gli intermediari abilitati, ma non è sempre presente per l’utente finale.</p>
-        </details>
-        <details>
-          <summary>Dove vengono salvati F24 e Certificazioni Uniche?</summary>
-          <p>I documenti vengono salvati localmente nelle cartelle <strong>Download/KAdeSuite/F24</strong> e <strong>Download/KAdeSuite/CU</strong>. Nessun documento viene inviato a server esterni dello sviluppatore.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="panel section">
-      <span class="eyebrow">Nota importante</span>
-      <h2>Strumento indipendente</h2>
-      <p>KAde Suite è uno strumento indipendente. Non è affiliato, sponsorizzato, approvato o gestito dall’Agenzia delle Entrate.</p>
-      <p>L’estensione non sostituisce le funzionalità ufficiali del sito dell’Agenzia delle Entrate. KAde Suite automatizza e organizza alcune operazioni che l’utente può effettuare attraverso le pagine del Cassetto Fiscale a cui ha legittimo accesso.</p>
-      <p><strong>KAde Suite: meno download manuali, più ordine nei documenti fiscali.</strong></p>
-    </section>
-
-    <footer class="footer">KAde Suite · <a href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia" target="_blank" rel="noopener">Chrome Web Store</a> · <a href="privacy.html">Privacy</a> · <a href="license.html">Licenza</a> · <a href="mailto:info@latenzazero.it">info@latenzazero.it</a></footer>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>KAde Suite · Strumento indipendente</div>
+      <div class="footer-links"><a href="https://chromewebstore.google.com/detail/kade-suite/hblajdcobjpapcgbkgjkkmnklhofilia">Chrome Web Store</a><a href="privacy.html">Privacy</a><a href="license.html">Licenza</a><a href="https://github.com/canbelieve/kade-suite">GitHub</a><a href="mailto:info@latenzazero.it">Contatti</a></div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
 </body>
 </html>

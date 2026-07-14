@@ -1,21 +1,13 @@
 {
   "name": "KAde Suite",
   "short_name": "KAde Suite",
-  "description": "Estensione Chrome per il download massivo di F24 in PDF e Certificazioni Uniche dal Cassetto Fiscale.",
-  "icons": [
-    {
-      "src": "assets/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "assets/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    }
-  ],
-  "theme_color": "#09111f",
-  "background_color": "#09111f",
+  "description": "Download massivo F24 e Certificazioni Uniche dal Cassetto Fiscale.",
+  "start_url": "/kade-suite/",
   "display": "standalone",
-  "lang": "it-IT"
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [
+    {"src": "assets/icon-128.png", "sizes": "128x128", "type": "image/png"},
+    {"src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png"}
+  ]
 }
