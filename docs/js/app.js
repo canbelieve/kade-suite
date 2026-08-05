@@ -1,5 +1,7 @@
 (() => {
   const button = document.querySelector('[data-language-toggle]');
+  const languageNodes = document.querySelectorAll('[data-lang]');
+  if (!button && !languageNodes.length) return;
   const languageStorageKey = 'kade-language';
   const initial = localStorage.getItem(languageStorageKey) || 'it';
   const apply = (lang) => {
