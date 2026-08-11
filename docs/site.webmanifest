@@ -1,8 +1,11 @@
 {
   "name": "KAde Suite",
   "short_name": "KAde Suite",
-  "description": "Download massivo F24 e Certificazioni Uniche dal Cassetto Fiscale.",
+  "description": "Estensione Chrome per F24, Certificazioni Uniche e fatture elettroniche SDI.",
+  "id": "/kade-suite/",
   "start_url": "/kade-suite/",
+  "scope": "/kade-suite/",
+  "lang": "it",
   "display": "standalone",
   "background_color": "#07111f",
   "theme_color": "#07111f",
