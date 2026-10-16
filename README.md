@@ -1,6 +1,6 @@
 # KAde Suite
 
-KAde Suite è una dashboard operativa per i servizi dell’Agenzia delle Entrate dedicata a F24, Certificazioni Uniche e fatture elettroniche SDI. È pensata per utenti, CAF, commercialisti e studi che vogliono organizzare localmente i documenti fiscali dopo l'accesso ai servizi ufficiali.
+KAde Suite è una dashboard operativa per i servizi dell’Agenzia delle Entrate dedicata a F24, Certificazioni Uniche e fatture elettroniche disponibili nel servizio “Fatture elettroniche”. Il modulo SDI non è attualmente integrato con il portale “Fatture e Corrispettivi” per le posizioni IVA. È pensata per utenti, CAF, commercialisti e studi che vogliono organizzare localmente i documenti fiscali dopo l'accesso ai servizi ufficiali.
 
 Dopo l’autenticazione al portale, l’utente apre KAde Suite e seleziona il modulo. L’estensione apre o riutilizza automaticamente la pagina corretta, verifica la sessione e consente di lavorare da un’unica interfaccia.
 
@@ -9,7 +9,7 @@ Dopo l’autenticazione al portale, l’utente apre KAde Suite e seleziona il mo
 - F24: scansione per annualità, selezione, download, unione PDF e controllo duplicati.
 - CU: recupero progressivo, riconoscimento dell’emittente e archiviazione ordinata.
 - SDI: sincronizzazione, ricerca, stati NUOVA/LETTA/SCARICATA e download P7M, XML e PDF FatturaPA.
-- archivi separati per codice fiscale o partita IVA;
+- archivi separati per codice fiscale;
 - backup e ripristino dello stato locale;
 - elaborazione locale, senza cloud o telemetria dello sviluppatore.
 
